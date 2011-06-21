@@ -1,0 +1,54 @@
+Intro
+* @brixen
+* Engine Yard
+* rubyspec
+
+History
+
+Purpose
+* Rubinius: Ruby First Class
+* Ruby in Ruby
+
+Tools
+* profiler
+* debugger
+* memory analysis
+
+Architecture
+* kernel
+* primitives
+* 
+
+Virtual Machine
+* instruction set
+* custom
+
+Garbage Collector
+* fast allocation
+* fast collection
+* generational
+* steady state
+* pluggable
+
+Parser
+* MRI
+
+Bytecode Compiler
+* syntax independent
+
+
+JIT Compiler
+* syntax independent
+* Ruby semantics
+* Output
+
+Contributing
+* commit bit policy
+* building
+* installing
+* running specs
+* running code
+* talking to people
+* rbc files
+* running without Ruby
+

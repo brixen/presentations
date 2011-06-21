@@ -8,7 +8,7 @@
 
 !SLIDE center
 
-![EY](ey.png)
+![EY](ey.jpg)
 
 !SLIDE
 

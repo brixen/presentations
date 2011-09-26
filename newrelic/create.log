@@ -1,0 +1,77 @@
+JIT: target search from object_kind_of?
+JIT: queueing method: object_kind_of?
+JIT: compiling Rubinius::Type#object_kind_of? (1308897006.151102)
+JIT: compiled method: object_kind_of?
+JIT: target search from each
+JIT: queueing method: each
+JIT: compiling Rubinius::Tuple#each (1308897006.159949)
+| inlining: Rubinius::Tuple#fields into each. generic primitive: jit_stub_tuple_fields
+| inlining: Rubinius::Tuple#[] into each. primitive tuple_at
+JIT: compiled method: each
+JIT: queueing block inside: find_all
+JIT: compiling block in find_all near kernel/common/enumerable.rb:464 (1308897006.183162)
+| inlining: Array#<< into find_all
+|| NOT inlining: set_index. Cache contains 2 entries
+|| class: Array
+|| class: Rubinius::LoadedFeatures
+JIT: compiled block inside: find_all
+JIT: queueing block inside: add_ivars
+JIT: compiling block in add_ivars near kernel/common/module.rb:711 (1308897006.192280)
+| NOT inlining: kind_of?. Cache contains 3 entries
+| class: Symbol
+| class: NilClass
+| class: String
+| inlining: Symbol#is_ivar? into add_ivars. generic primitive: jit_stub_symbol_is_ivar
+JIT: compiled block inside: add_ivars
+JIT: target search from current_script
+JIT: queueing method: current_script
+JIT: compiling Rubinius::StaticScope#current_script (1308897006.225509)
+| inlining: read to '@script' on Rubinius::StaticScope in #current_script
+| inlining: read to '@parent' on Rubinius::StaticScope in #current_script (slot: 2)
+| inlining: read to '@script' on Rubinius::StaticScope in #current_script
+JIT: compiled method: current_script
+JIT: target search from include?
+JIT: queueing method: include?
+JIT: compiling Array#include? (1308897006.235803)
+| inlining: Rubinius::Tuple#[] into include?. primitive tuple_at
+JIT: compiled method: include?
+JIT: target search from each
+JIT: queueing method: each
+JIT: compiling Array#each (1308897006.251853)
+| inlining: Rubinius::Tuple#[] into each. primitive tuple_at
+JIT: compiled method: each
+JIT: target search from method_table
+JIT: queueing method: method_table
+JIT: compiling Module#method_table (1308897006.291782)
+JIT: compiled method: method_table
+JIT: target search from initialize
+JIT: queueing method: initialize
+JIT: compiling Link#initialize (1308897006.307046)
+JIT: compiled method: initialize
+JIT: queueing block inside: work
+JIT: compiling block in work near /source/presentations/heroku/bm_create.rb:23 (1308897006.314184)
+| NOT inlining: Class#allocate into work. primitive: class_allocate
+| inlining: Link#initialize into work
+| NOT inlining: Fixnum#% into work. primitive: fixnum_mod
+| inlining: Chain#add into work
+|| inlining: Chain#tail into add
+||| NOT inlining: Class#allocate into tail. primitive: class_allocate
+||| inlining: Link#initialize into tail
+|| inlining: writer to '@right' on Link in #add
+|| inlining: Chain#tail into add
+||| NOT inlining: Class#allocate into tail. primitive: class_allocate
+||| inlining: Link#initialize into tail
+|| inlining: writer to '@left' on Link in #add
+JIT: compiled block inside: work
+JIT: target search from new
+JIT: queueing method: new
+JIT: compiling Class#new (1308897006.361366)
+| NOT inlining: allocate. Cache contains 3 entries
+| class: <nil>
+| class: <nil>
+| class: <nil>
+JIT: compiled method: new
+JIT: target search from times
+JIT: queueing method: times
+JIT: compiling Integer#times (1308897013.811635)
+JIT: compiled method: times

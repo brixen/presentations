@@ -1,0 +1,14 @@
+{ "name": "NewRelic",
+  "sections": [
+    {"section":"introduction"},
+    {"section":"architecture"},
+    {"section":"virtual_machine"},
+    {"section":"bytecode_compiler"},
+    {"section":"garbage_collector"},
+    {"section":"jit_compiler"},
+    {"section":"concurrency"},
+    {"section":"tools"},
+    {"section":"contributing"},
+    {"section":"thanks"}
+  ]
+}

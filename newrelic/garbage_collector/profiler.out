@@ -1,0 +1,57 @@
+$ rbx -Xprofile -v -I. bm_create.rb
+rubinius 2.0.0dev (1.8.7 60b004a2 yyyy-mm-dd JI) [x86_64-apple-darwin10.7.0]
+Thread 1: total running time: 661.87429089s
+
+  %   cumulative   self                self     total
+ time   seconds   seconds      calls  ms/call  ms/call  name
+------------------------------------------------------------
+  61.02  543.62    403.89  200000000     0.00     0.00  Object::work<16> {}
+  17.12  660.43    113.32          2 56661.61 330215.82  Integer#times
+   8.56   53.17     56.66  200000002     0.00     0.00  Link#initialize
+   8.48   49.42     56.16  400000006     0.00     0.00  Fixnum#%
+   4.01   26.08     26.51  200000541     0.00     0.00  Class#allocate
+   0.40    2.68      2.68       5676     0.47     0.47  GC.collect_young
+   0.21    1.41      1.41          1  1410.91  1410.91  Rubinius::Tooling.disable
+   0.10    0.59      0.63    2000000     0.00     0.00  Object#chain
+   0.06    0.40      0.40          5    79.28    79.28  GC.collect_mature
+   0.02    0.14      0.14         20     7.07     7.03  Process.replace
+   0.00    0.03      0.03        104     0.27     0.27  Rubinius::Tuple#==
+   0.00    0.01      0.01         11     0.93     1.13  Rubinius::Sprinter::Builder#parse
+   0.00    0.03      0.01         20     0.36     1.68  Process.wait2
+   0.00    0.01      0.01          9     0.76     0.76  Rubinius::Sprinter::Builder::FloatAtom#bytecode
+   0.00    0.02      0.00         11     0.39     1.47  Module#dynamic_method
+   0.00  660.45      0.00        154     0.02  4288.65  Array#each
+   0.00    0.01      0.00         11     0.27     1.20  Rubinius::Sprinter::Builder#build
+   0.00    0.00      0.00         21     0.11     0.11  IO#puts
+   0.00    0.18      0.00         20     0.11     8.89  Kernel#`
+   0.00    0.00      0.00         21     0.08     0.07  Rubinius::CompiledMethod#==
+   0.00    0.00      0.00          1     1.55     2.86  Benchmark.__module_init__
+   0.00    0.00      0.00          3     0.50     0.50  Rubinius::CodeLoader#load_compiled_file
+   0.00    0.01      0.00         11     0.13     1.20  Rubinius::Sprinter::initialize<19> {}
+   0.00    0.00      0.00          1     1.31     1.31  Benchmark::Tms.__class_init__
+   0.00    0.02      0.00          3     0.43     5.93  Benchmark::Tms#format
+   0.00  660.43      0.00          2     0.61 330216.42  Object#work
+   0.00  660.43      0.00          2     0.46 330216.89  Benchmark.measure
+   0.00  660.46      0.00          1     0.90 660462.15  Rubinius::CodeLoader#load_script
+   0.00    0.02      0.00         21     0.04     0.78  String#gsub!
+   0.00    0.00      0.00          3     0.29     0.72  Rubinius::CodeLoader#load_file
+   0.00    0.02      0.00         11     0.07     1.51  Rubinius::Sprinter.get
+   0.00    0.00      0.00          2     0.38     1.15  Rubinius::CodeLoader#require
+   0.00    0.18      0.00         20     0.03     9.05  Object#report
+   0.00    0.02      0.00          9     0.07     1.73  String#%
+   0.00    0.02      0.00         11     0.05     1.48  Rubinius::Sprinter#initialize
+   0.00    0.03      0.00         20     0.02     1.71  Process.waitpid
+   0.00  660.46      0.00          1     0.40 660462.57  Rubinius::Loader#script
+   0.00    0.00      0.00         21     0.02     0.13  Kernel#puts
+   0.00  660.46      0.00          3     0.12 220153.75  Rubinius.run_script
+   0.00  660.45      0.00          1     0.36 660453.80  Benchmark.bmbm
+   0.00  326.41      0.00          1     0.31 326411.85  Benchmark::bmbm<284> {}
+   0.00  334.04      0.00          1     0.22 334038.25  Benchmark::bmbm<267> {}
+   0.00  660.46      0.00          1     0.21 660461.23  script:/source/presentations/heroku/bm_create.rb
+   0.00    1.41      0.00          1     0.21  1411.12  Rubinius::Profiler::Instrumenter#__stop__
+   0.00    0.00      0.00          1     0.15     3.01  script:/source/rubinius2.0/lib/benchmark.rb
+
+16 methods omitted
+
+61 methods called a total of 1,002,006,876 times
+

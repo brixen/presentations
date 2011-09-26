@@ -104,7 +104,7 @@
 
 !SLIDE commandline
 
-    console> get system
+    $ console> get system
     var system = [
       "name",
       "backtrace",
@@ -117,36 +117,36 @@
 
 !SLIDE commandline
 
-    console> get system.pid
+    $ console> get system.pid
     var system.pid = [
       69118,
     ]
-    console> get system.threads
+    $ console> get system.threads
     var system.threads = [
       "count",
       "backtrace",
     ]
-    console> get system.threads.count
+    $ console> get system.threads.count
     var system.threads.count = 2
 
 !SLIDE commandline
 
-    console> get system.memory.young.bytes
+    $ console> get system.memory.young.bytes
     var system.memory.young.bytes = 6291456
-    console> get system.gc
+    $ console> get system.gc
     var system.gc = [
       "full",
       "young",
     ]
-    console> get system.gc.full
+    $ console> get system.gc.full
     var system.gc.full = [
       "last_wallclock",
       "count",
       "total_wallclock",
     ]
-    console> get system.gc.full.count
+    $ console> get system.gc.full.count
     var system.gc.full.count = 0
-    console> get system.gc.young.count
+    $ console> get system.gc.young.count
     var system.gc.young.count = 5
 
 

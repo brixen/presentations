@@ -1,0 +1,8 @@
+{ "name": "RubyConf11",
+  "sections": [
+    {"section":"act1-forests"},
+    {"section":"act2-solutions_and_problems"},
+    {"section":"act3-foundations"},
+    {"section":"act4-tools"}
+  ]
+}

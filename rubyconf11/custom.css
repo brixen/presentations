@@ -66,12 +66,116 @@
   width: 55%;
 }
 
+.disappointed h1 {
+  background-color: #222;
+  color: #eee;
+  left: 635px;
+  top: 40px;
+  width: 32%;
+  font-size: 3.5em;
+}
+
 .worried {
   background-color: #eee;
 }
 
 .worried img {
   width: 70%;
+}
+
+.worried h1 {
+  background-color: #222;
+  color: #eee;
+  left: 650px;
+  top: 20px;
+  width: 30%;
+  font-size: 3.5em;
+}
+
+.sad h1 {
+  background-color: #222;
+  color: #eee;
+  left: 50px;
+  top: 610px;
+  width: 80%;
+  font-size: 2.8em;
+}
+
+.act-intro h1 {
+  text-decoration: underline;
+  font-size: 7em;
+  letter-spacing: -0.04em;
+}
+
+.act-intro ul li {
+  font-size: 1.5em;
+  padding: 0.12em;
+  margin: 0.1em 0;
+}
+
+.w-intro h1 {
+  font-size: 40em;
+  margin: -0.15em 0 0 0;
+  padding: 0;
+}
+
+.wtf-intro h1 {
+  font-size: 25em;
+  margin: -0.15em 0 0 0;
+  padding: 0;
+}
+
+.single-point-intro h1 {
+  margin-top: -0.25em;
+  font-size: 9em;
+  text-decoration: underline:
+}
+
+.single-point-intro p {
+  font-size: 4.5em;
+}
+
+.description-list h1 {
+  font-size: 7em;
+  letter-spacing: -0.04em;
+}
+
+.description-list ul li {
+  font-size: 1.5em;
+  padding: 0.12em;
+  margin: 0.1em 0;
+}
+
+.srs-bsns h1 {
+  font-size: 7.5em;
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+.single-point h1 {
+  margin: 0 0.5em;
+  font-size: 7.5em;
+  text-align: center;
+}
+
+.single-point p {
+  font-size: 4.5em;
+}
+
+.compiled-code {
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.tools-quote h1 {
+  font-size: 8em;
+  padding-left: 0.5em;
+  width: 80%;
+}
+
+.tools-quote h2 {
+  text-align: right;
+  padding-right: 2.5em;
 }
 
 [alt~=EngineYard] {

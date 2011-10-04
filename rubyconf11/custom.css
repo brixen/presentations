@@ -178,6 +178,16 @@
   padding-right: 2.5em;
 }
 
+#preso {
+  zoom: 0.80;
+  -moz-transform: scale(0.80);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.80);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.80);
+  -webkit-transform-origin: 0 0;*/
+}
+
 [alt~=EngineYard] {
   width: 80%;
 }

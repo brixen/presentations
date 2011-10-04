@@ -40,6 +40,10 @@ http://picasaweb.google.com/lh/photo/bayTKUSuvLPJ8em1oMPbUg
 
 # If developer happiness and customer happiness collide...
 
+!SLIDE center
+
+<iframe src="http://player.vimeo.com/video/29993216?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0"></iframe>
+
 !SLIDE
 
 http://www.oscon.com/oscon2011/public/schedule/detail/20527

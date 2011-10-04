@@ -1,2 +1,3 @@
 require "showoff"
-run ShowOff.new
+
+run ShowOff
